@@ -1,9 +1,6 @@
 [user]
-  name = Yevgeny Kuznetsov
-  email = yevgenyku@gmail.com
-  signingkey = 9B3F053F924F68E895B3A909755A61972E760B05
-[commit]
-  gpgsign = true
+  name = Pavel Vainer
+  email = pavel.vainer@checkmarx.com
 [credential]
   helper = cache --timeout=3600
 [core]
