@@ -184,13 +184,11 @@ function install_macos_packages() {
     zip unzip gzip pigz bzip2 p7zip
     pandoc docutils
     make cmake
-    ruby hugo
     xclip coreutils
     ack gawk
     htop tree
-    dos2unix jq thefuck tidy-html5
+    dos2unix jq thefuck
     ascii screenfetch
-    tmux
     awscli ec2-ami-tools
     fd bat fzf ripgrep
     kubernetes-cli helm
@@ -198,7 +196,7 @@ function install_macos_packages() {
 
   local casks=(
     rar keka kekaexternalhelper
-    iterm2 macvim docker intellij-idea
+    iterm2 macvim docker
     cyberduck textmate
     vlc gimp deluge
     zoom
@@ -507,15 +505,15 @@ elif [[ "$(uname -s)" == *[Ll]inux* ]] 2>/dev/null; then # Check if Linux or Dar
   done
 else
   echo "MacOS detected"
-  check_ssh_key
+  #check_ssh_key
   install_macos_packages
   install_java
-  beautify_shell
-  create_links
-  install_nvm_npm_yarn
-  create_vim_undo_dir
-  install_vim_plugins
-  install_tmux_plugins
+  #beautify_shell
+  #create_links
+  #install_nvm_npm_yarn
+  #create_vim_undo_dir
+  #install_vim_plugins
+  #install_tmux_plugins
 fi
 
 echo "Success"
