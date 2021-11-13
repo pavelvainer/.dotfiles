@@ -389,16 +389,16 @@ function install_vim_plugins() {
 }
 
 # Install tmux plugin manager and plugins on initial setup:
-function install_tmux_plugins() {
-  if [[ -v TMUX && "$TMUX" != "" ]]; then
-    return 0;
-  fi
-  echo "-----> Install tmux plugin manager"
-  TMUX_DIR=${HOME}/.tmux
-  rm -rf "${TMUX_DIR}/plugins/tpm" 2>/dev/null || true
-  git clone --depth=1 https://github.com/tmux-plugins/tpm ${TMUX_DIR}/plugins/tpm && \
-bash ${TMUX_DIR}/plugins/tpm/bin/install_plugins
-}
+#function install_tmux_plugins() {
+#  if [[ -v TMUX && "$TMUX" != "" ]]; then
+#    return 0;
+#  fi
+#  echo "-----> Install tmux plugin manager"
+#  TMUX_DIR=${HOME}/.tmux
+#  rm -rf "${TMUX_DIR}/plugins/tpm" 2>/dev/null || true
+#  git clone --depth=1 https://github.com/tmux-plugins/tpm ${TMUX_DIR}/plugins/tpm && \
+#bash ${TMUX_DIR}/plugins/tpm/bin/install_plugins
+#}
 
 # Manually install ripgrep until https://bugs.launchpad.net/ubuntu/+source/rust-bat/+bug/1868517 is solved
 function install_ripgrep() {
