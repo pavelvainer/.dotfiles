@@ -57,9 +57,9 @@ Sync with dotfiles (this) repo
 
     rm -rf ~/.dotfiles
     # if you've set up an SSH key and have access to this repository, you can use ssh:
-    git clone git@github.com:yevgenykuz/.dotfiles.git ~/.dotfiles
+    git clone git@github.com:pavelvainer/.dotfiles.git ~/.dotfiles
     # otherwise, use https:
-    git clone https://github.com/yevgenykuz/.dotfiles.git ~/.dotfiles
+    git clone https://github.com/pavelvainer/.dotfiles.git ~/.dotfiles
     # make sure all .sh files have execute permission. If not, give it with:
     chmod +x ~/.dotfiles/*.sh
     chmod +x -R ~/.dotfiles/scripts
